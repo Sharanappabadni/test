@@ -1,8 +1,8 @@
 pipeline{
     agent any
-    options {
-        buildDiscarder(logRotator(numKeepstr: '5'))
-    }
+    // options {
+    //     buildDiscarder(logRotator(numKeepstr: '5'))
+    // }
     stages {
         stage('docker build'){
             steps {
